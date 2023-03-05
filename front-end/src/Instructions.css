@@ -1,0 +1,21 @@
+.instructions-container {
+    display: flex;
+    flex-direction: column;
+    /* grid-auto-flow: row; */
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.instructions-demo {
+    background-color: #333333;
+    color: aliceblue;
+}
+
+.instructions-demo h1{
+    color: #85C566;
+}
+
+.first-billboard{
+    background-color: #333333;
+    color: aliceblue;
+}

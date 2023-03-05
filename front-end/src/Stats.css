@@ -1,0 +1,22 @@
+.stats-container {
+    display: flex;
+    /* grid-auto-flow: row; */
+    flex-direction: column;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.user-stats{
+    background-color: #333333;
+    color: aliceblue;
+    text-align: center;
+}
+
+.user-stats h1{
+    color: #85C566;
+}
+
+.second-billboard{
+    background-color: #333333;
+    color: aliceblue;
+}
