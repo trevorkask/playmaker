@@ -11,3 +11,22 @@ h1{
 body {
   background-color: black;
 }
+
+ul{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+button{
+  background-color: black;
+  color: aliceblue;
+}
+
+#btn-1{
+  text-align: left;
+}
+
+#btn-2{
+  text-align: right;
+}
