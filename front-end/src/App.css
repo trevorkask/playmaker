@@ -1,6 +1,6 @@
 .App{
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1.5fr 1fr;
   gap: 1em;
 }
