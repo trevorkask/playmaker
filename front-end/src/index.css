@@ -8,14 +8,31 @@ h1{
   color: white;
 }
 
-body {
-  background-color: black;
+div > * {
+  color: white;
 }
 
-ul{
-  display: flex;
-  justify-content: center;
-  width: 80%;
+#navbar{
+  display: grid;
+  grid-auto-flow: column;
+  width: 30%;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  font-size: 15px;
+}
+
+#for-fun{
+  text-align: left;
+}
+
+#streak{
+  text-align: right;
+}
+
+
+
+body {
+  background-color: black;
 }
 
 button{
