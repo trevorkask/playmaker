@@ -19,17 +19,26 @@ div > * {
   grid-template-columns: 1fr 1fr;
   margin: auto;
   font-size: 15px;
+  gap: 2em;
 }
 
 #for-fun{
-  text-align: left;
+  text-align: center;
+  cursor: pointer;
 }
 
 #streak{
-  text-align: right;
+  text-align: center;
+  cursor: pointer;
 }
 
+#for-fun:hover{
+  background-color: #525453;
+}
 
+#streak:hover{
+  background-color: #525453;
+}
 
 body {
   background-color: black;

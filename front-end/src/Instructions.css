@@ -4,6 +4,7 @@
     /* grid-auto-flow: row; */
     grid-template-rows: repeat(2, 1fr);
     gap: 24px;
+    text-align: center;
 }
 
 .instructions-demo {
