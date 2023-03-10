@@ -5,4 +5,22 @@ div{
 input{
     height: 15%;
     width: 50%;
+    margin-bottom: 5%;
+}
+
+.main-container{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1.5em;
+}
+
+#end-point{
+    height: 100%;
+    width: 50%;
+    background-color: #20211F;
+    margin: auto;
+}
+
+#end-point > * {
+    color: #85C566;
 }
