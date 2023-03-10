@@ -3,7 +3,7 @@ div{
 }
 
 input{
-    height: 15%;
+    height: 12%;
     width: 50%;
     margin-bottom: 5%;
 }
@@ -23,4 +23,8 @@ input{
 
 #end-point > * {
     color: #85C566;
+}
+
+b{
+    font-size: xx-large;
 }

@@ -12,7 +12,9 @@ const Game = () => {
                 <div id = "end-point">
                     <p>Cristiano Ronaldo</p>
                 </div>
-                <Trial name="Sergio Ramos"></Trial>
+                <Trial name="Mason Mount" state="gray"></Trial>
+                <Trial name="Sergio Ramos" state="white"></Trial>
+                <p><b>?</b></p>
                 <div id = "end-point">
                     <p>Lionel Messi</p>
                 </div>

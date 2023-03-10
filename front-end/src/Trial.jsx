@@ -4,7 +4,7 @@ import './Trial.css';
 const Trial = (props) => {
     return(
         <div className="user-trial">
-            <p>{props.name}</p>
+            <p style={{color: props.state}}>{props.name}</p>
         </div>
     )
 }
