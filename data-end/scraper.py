@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'https://fbref.com/en/squads/76ffc013/2009-2010/Portsmouth-Stats'
+url = 'https://fbref.com/en/squads/2abfe087/2006-2007/Watford-Stats'
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
