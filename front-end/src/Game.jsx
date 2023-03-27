@@ -2,12 +2,13 @@ import React from "react";
 import './Game.css';
 import './Trial.css'
 import Trial from './Trial'
+import SearchBar from "./SearchBar";
 
 const Game = () => {
     return(
         <div>
             <p>Connect between these two players using mutual teammates</p>
-            <input type="text" placeholder="Trial 1 out of 5"></input>
+            <SearchBar></SearchBar>
             <div className="main-container">
                 <div id = "end-point">
                     <p>Cristiano Ronaldo</p>
