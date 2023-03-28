@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from "react";
+import './SearchBar.css'
 
 function SearchBar() {
   const [query, setQuery] = useState("");
   const [options, setOptions] = useState([
-    "Prefix 1 Option 1",
-    "Prefix 1 Option 2",
-    "Prefix 2 Option 1",
-    "Prefix 2 Option 2",
+    "Hakimi",
+    "Mbappe",
+    "Cavani",
+    "Reus",
   ]);
   const [filteredOptions, setFilteredOptions] = useState(options);
 
   useEffect(() => {
     setFilteredOptions(
       options.filter((option) =>
-        option.toLowerCase().startsWith(query.toLowerCase())
+        option.toLowerCase().includes(query.toLowerCase())
       )
     );
   }, [options, query]);
@@ -29,15 +30,17 @@ function SearchBar() {
       <input
         type="text"
         placeholder="Search..."
+        autoComplete="off"
+        id = "search_bar"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
       />
       <div className="dropdown">
         {filteredOptions.map((option, index) => (
-          <div key={index} className="option" onClick={() => setQuery(option)}>
+          <button key={index} className="option" onClick={() => setQuery(option)}>
             {option}
-          </div>
+          </button>
         ))}
       </div>
     </div>
