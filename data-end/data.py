@@ -1012,5 +1012,9 @@ players_22 = set(norwich_2022 + watford_2022 + burnley_2022 + leeds_2022 + evert
 players_23 = set(southampton_2023 + leicester_2023 + nottingham_2023 + everton_2023 + leeds_2023 + westham_2023 + bournemouth_2023 + wolves_2023 + crystalpalace_2023 +
                  chelsea_2023 + fulham_2023 + brentford_2023 + liverpool_2023 + brighton_2023 + astonvilla_2023 + spurs_2023 + newcastle_2023 + manutd_2023 + mancity_2023 + arsenal_2023)
 
-# print(len(players_01) + len(players_02) + len(players_03) + len(players_04) + len(players_05) + len(players_06) + len(players_07) + len(players_08) + len(players_09) + len(players_10) + len(players_11) + len(players_12) + len(players_13) + len(players_14) + len(players_15) + len(players_16) + len(players_17) + len(players_18) + len(players_19) + len(players_20) + len(players_21) + len(players_22) + len(players_23))
-# print(542+530+530+515+515+507+534+531+528+545+543+538+523+544+618+644+620+601+571+614+641+678+668)
+#print(len(players_01) + len(players_02) + len(players_03) + len(players_04) + len(players_05) + len(players_06) + len(players_07) + len(players_08) + len(players_09) + len(players_10) + len(players_11) + len(players_12) + len(players_13) + len(players_14) + len(players_15) + len(players_16) + len(players_17) + len(players_18) + len(players_19) + len(players_20) + len(players_21) + len(players_22) + len(players_23))
+#print(542+530+530+515+515+507+534+531+528+545+543+538+523+544+618+644+620+601+571+614+641+678+668)
+
+players = (players_01 | players_02 | players_03 | players_04 | players_05 | players_06 | players_07 | players_08 | players_09 | players_10 | players_11 | players_12 | players_13 | players_14 | players_15 | players_16 | players_17 | players_18 | players_19 | players_20 | players_21 | players_22 | players_23)
+#print(len(players))
+#print(players)
