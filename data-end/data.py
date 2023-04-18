@@ -353,8 +353,8 @@ swansea_2015 = ['Ashley Williams', 'Łukasz Fabiański', 'Neil Taylor', 'Gylfi S
                 'Kyle Naughton', 'Tom Carroll', 'Jazz Richards', 'Kyle Bartley', 'Jordi Amat', 'Leon Britton', 'Nélson Oliveira', 'Marvin Emnes', 'Modou Barrow', 'Dwight Tiendalli', 'Jay Fulton', 'Gerhard Tremmel', 'Matt Grimes', 'David Cornell', 'Raheem Hanley', 'Josh Sheehan', 'Liam Shephard']
 stoke_2015 = ['Steven Nzonzi', 'Asmir Begović', 'Ryan Shawcross', 'Erik Pieters', 'Mame Biram Diouf', 'Jonathan Walters', 'Glenn Whelan', 'Marc Wilson', 'Phil Bardsley', 'Geoff Cameron', 'Marko Arnautović', 'Victor Moses', 'Peter Crouch', 'Charlie Adam',
               'Marc Muniesa', 'Bojan Krkić', 'Philipp Wollscheid', 'Stephen Ireland', 'Steve Sidwell', 'Jack Butland', 'Oussama Assaidi', 'Peter Odemwingie', 'Dionatan Teixeira', 'Robert Huth', 'Ollie Shenton', 'Wilson Palacios', 'Thomas Sørensen', 'Andy Wilkinson']
-southampton_2015 = ['Joel Ward', 'Julián Speroni', 'Scott Dann', 'Jason Puncheon', 'Yannick Bolasie', 'Joe Ledley', 'James McArthur', 'Damien Delaney', 'Martin Kelly', 'Mile Jedinak', 'Wilfried Zaha', 'Marouane Chamakh', 'Fraizer Campbell', 'Brede Hangeland', 'Dwight Gayle', 'Glenn Murray',
-                    'Adrian Mariappa', 'Pape Souaré', 'Jordon Mutch', 'Yaya Sanogo', 'Wayne Hennessey', 'Barry Bannan', 'Lee Chung-yong', "Stuart O'Keefe", 'Adlène Guedioura', 'Shola Ameobi', 'Kevin Doyle', 'Jonny Williams', 'Jerome Thomas', 'Zeki Fryers', 'Hiram Boateng', 'Jake Gray', 'Andrew Johnson', 'Paddy McCarthy']
+crystalpalace_2015 = ['Joel Ward', 'Julián Speroni', 'Scott Dann', 'Jason Puncheon', 'Yannick Bolasie', 'Joe Ledley', 'James McArthur', 'Damien Delaney', 'Martin Kelly', 'Mile Jedinak', 'Wilfried Zaha', 'Marouane Chamakh', 'Fraizer Campbell', 'Brede Hangeland', 'Dwight Gayle', 'Glenn Murray',
+                      'Adrian Mariappa', 'Pape Souaré', 'Jordon Mutch', 'Yaya Sanogo', 'Wayne Hennessey', 'Barry Bannan', 'Lee Chung-yong', "Stuart O'Keefe", 'Adlène Guedioura', 'Shola Ameobi', 'Kevin Doyle', 'Jonny Williams', 'Jerome Thomas', 'Zeki Fryers', 'Hiram Boateng', 'Jake Gray', 'Andrew Johnson', 'Paddy McCarthy']
 everton_2015 = ['Phil Jagielka', 'Séamus Coleman', 'Gareth Barry', 'Romelu Lukaku', 'Tim Howard', 'Leighton Baines', 'James McCarthy', 'John Stones', 'Steven Naismith', 'Ross Barkley', 'Kevin Mirallas', 'Muhamed Bešić', 'Leon Osman', 'Sylvain Distin', 'Aaron Lennon',
                 'Aiden McGeady', "Samuel Eto'o", 'Arouna Koné', 'Joel Robles', 'Antolín Alcaraz', 'Tony Hibbert', 'Darron Gibson', 'Steven Pienaar', 'Luke Garbutt', 'Bryan Oviedo', 'Brendan Galloway', 'Christian Atsu', 'Tyias Browning', 'Russell Griffiths', 'Ryan Ledson', 'Conor McAleny']
 westham_2015 = ['Aaron Cresswell', 'Adrián', 'Stewart Downing', 'Cheikhou Kouyaté', 'Carl Jenkinson', 'Winston Reid', 'Mark Noble', 'Alex Song', 'Enner Valencia', 'James Collins', 'James Tomkins', 'Diafra Sakho', 'Kevin Nolan', 'Morgan Amalfitano', 'Andy Carroll',
@@ -964,4 +964,53 @@ coventry_2001 = ['Craig Bellamy', 'Gary Breen', 'Mustapha Hadji', 'Paul Williams
 bradford_2001 = ['Stuart McCall', 'Benito Carbone', 'Peter Atherton', 'Ashley Ward', 'Gary Walsh', 'Robert Molenaar', 'Wayne Jacobs', 'David Wetherall', 'Ian Nolan', 'Matt Clarke', 'Eoin Jess', 'Gareth Whalley', 'Andy Myers',
                  'Jamie Lawrence', 'Robbie Blake', 'Gunnar Halle', 'Billy McKinlay', 'Peter Beagrie', 'David Hopkin', 'Gary Locke', 'Lee Sharpe', 'Stan Collymore', 'Dean Saunders', 'Aidan Davison', 'Gareth Grant', 'Scott Kerr', 'Isaiah Rankin']
 
-# DONE
+# Create a set of all players
+players_01 = set(bradford_2001 + coventry_2001 + mancity_2001 + derby_2001 + everton_2001 + westham_2001 + middlesbrough_2001 + leicester_2001 + spurs_2001 + newcastle_2001 +
+                 southampton_2001 + charlton_2001 + astonvilla_2001 + sunderland_2001 + chelsea_2001 + ipswich_2001 + leeds_2001 + liverpool_2001 + arsenal_2001 + manutd_2001)
+players_02 = set(leicester_2002 + derby_2002 + ipswich_2002 + sunderland_2002 + bolton_2002 + everton_2002 + charlton_2002 + fulham_2002 + middlesbrough_2002 +
+                 southampton_2002 + blackburn_2002 + spurs_2002 + astonvilla_2002 + westham_2002 + chelsea_2002 + leeds_2002 + newcastle_2002 + manutd_2002 + liverpool_2002 + arsenal_2002)
+players_03 = set(sunderland_2003 + westbrom_2003 + westham_2003 + bolton_2003 + astonvilla_2003 + leeds_2003 + fulham_2003 + birmingham_2003 + charlton_2003 + middlesbrough_2003 +
+                 spurs_2003 + mancity_2003 + southampton_2003 + everton_2003 + blackburn_2003 + liverpool_2003 + chelsea_2003 + newcastle_2003 + arsenal_2003 + manutd_2003)
+players_04 = set(wolves_2004 + leeds_2004 + leicester_2004 + everton_2004 + mancity_2004 + blackburn_2004 + spurs_2004 + portsmouth_2004 + southampton_2004 + middlesbrough_2004 +
+                 birmingham_2004 + fulham_2004 + bolton_2004 + charlton_2004 + astonvilla_2004 + newcastle_2004 + liverpool_2004 + manutd_2004 + chelsea_2004 + arsenal_2004)
+players_05 = set(southampton_2005 + norwich_2005 + crystalpalace_2005 + westbrom_2005 + portsmouth_2005 + blackburn_2005 + newcastle_2005 + fulham_2005 + birmingham_2005 +
+                 charlton_2005 + astonvilla_2005 + spurs_2005 + mancity_2005 + middlesbrough_2005 + bolton_2005 + liverpool_2005 + everton_2005 + manutd_2005 + arsenal_2005 + chelsea_2005)
+players_06 = set(sunderland_2006 + westbrom_2006 + birmingham_2006 + portsmouth_2006 + astonvilla_2006 + mancity_2006 + middlesbrough_2006 + charlton_2006 + fulham_2006 +
+                 everton_2006 + wigan_2006 + westham_2006 + bolton_2006 + newcastle_2006 + blackburn_2006 + spurs_2006 + arsenal_2006 + liverpool_2006 + manutd_2006 + chelsea_2006)
+players_07 = set(watford_2007 + charlton_2007 + sheffield_2007 + wigan_2007 + fulham_2007 + westham_2007 + mancity_2007 + newcastle_2007 + middlesbrough_2007 +
+                 astonvilla_2007 + blackburn_2007 + portsmouth_2007 + reading_2007 + bolton_2007 + everton_2007 + spurs_2007 + arsenal_2007 + liverpool_2007 + chelsea_2007 + manutd_2007)
+players_08 = set(derby_2008 + birmingham_2008 + reading_2008 + fulham_2008 + bolton_2008 + sunderland_2008 + wigan_2008 + middlesbrough_2008 + newcastle_2008 + spurs_2008 +
+                 westham_2008 + mancity_2008 + portsmouth_2008 + blackburn_2008 + astonvilla_2008 + everton_2008 + liverpool_2008 + arsenal_2008 + chelsea_2008 + manutd_2008)
+players_09 = set(westbrom_2009 + middlesbrough_2009 + newcastle_2009 + hull_2009 + sunderland_2009 + blackburn_2009 + portsmouth_2009 + bolton_2009 + stoke_2009 +
+                 wigan_2009 + mancity_2009 + westham_2009 + spurs_2009 + fulham_2009 + astonvilla_2009 + everton_2009 + arsenal_2009 + chelsea_2009 + liverpool_2009 + manutd_2009)
+players_10 = set(portsmouth_2010 + hull_2010 + burnley_2010 + westham_2010 + wigan_2010 + wolves_2010 + bolton_2010 + sunderland_2010 + fulham_2010 + stoke_2010 +
+                 blackburn_2010 + birmingham_2010 + everton_2010 + liverpool_2010 + astonvilla_2010 + mancity_2010 + spurs_2010 + arsenal_2010 + manutd_2010 + chelsea_2010)
+players_11 = set(westham_2011 + blackpool_2011 + birmingham_2011 + wolves_2011 + wigan_2011 + blackburn_2011 + bolton_2011 + stoke_2011 + newcastle_2011 + westbrom_2011 +
+                 sunderland_2011 + astonvilla_2011 + fulham_2011 + everton_2011 + liverpool_2011 + spurs_2011 + arsenal_2011 + mancity_2011 + chelsea_2011 + manutd_2011)
+players_12 = set(wolves_2012 + blackburn_2012 + bolton_2012 + qpr_2012 + astonvilla_2012 + wigan_2012 + stoke_2012 + sunderland_2012 + norwich_2012 + swansea_2012 +
+                 westbrom_2012 + fulham_2012 + liverpool_2012 + everton_2012 + chelsea_2012 + newcastle_2012 + spurs_2012 + arsenal_2012 + manutd_2012 + mancity_2012)
+players_13 = set(qpr_2013 + reading_2013 + wigan_2013 + sunderland_2013 + newcastle_2013 + astonvilla_2013 + southampton_2013 + stoke_2013 + fulham_2013 +
+                 norwich_2013 + westham_2013 + swansea_2013 + westbrom_2013 + liverpool_2013 + everton_2013 + spurs_2013 + arsenal_2013 + chelsea_2013 + mancity_2013 + manutd_2013)
+players_14 = set(cardiff_2014 + fulham_2014 + norwich_2014 + westbrom_2014 + hull_2014 + astonvilla_2014 + sunderland_2014 + westham_2014 + swansea_2014 + crystalpalace_2014 +
+                 newcastle_2014 + stoke_2014 + southampton_2014 + manutd_2014 + spurs_2014 + everton_2014 + arsenal_2014 + chelsea_2014 + liverpool_2014 + mancity_2014)
+players_15 = set(qpr_2015 + burnley_2015 + hull_2015 + astonvilla_2015 + sunderland_2015 + newcastle_2015 + leicester_2015 + westbrom_2015 + westham_2015 + everton_2015 +
+                 crystalpalace_2015 + stoke_2015 + swansea_2015 + southampton_2015 + liverpool_2015 + spurs_2015 + manutd_2015 + arsenal_2015 + mancity_2015 + chelsea_2015)
+players_16 = set(astonvilla_2016 + norwich_2016 + newcastle_2016 + sunderland_2016 + bournemouth_2016 + crystalpalace_2016 + westbrom_2016 + watford_2016 + swansea_2016 +
+                 everton_2016 + chelsea_2016 + stoke_2016 + liverpool_2016 + westham_2016 + southampton_2016 + manutd_2016 + mancity_2016 + spurs_2016 + arsenal_2016 + leicester_2016)
+players_17 = set(sunderland_2017 + middlesbrough_2017 + hull_2017 + watford_2017 + burnley_2017 + swansea_2017 + crystalpalace_2017 + stoke_2017 + leicester_2017 +
+                 westbrom_2017 + westham_2017 + bournemouth_2017 + southampton_2017 + everton_2017 + manutd_2017 + arsenal_2017 + liverpool_2017 + mancity_2017 + spurs_2017 + chelsea_2017)
+players_18 = set(westbrom_2018 + stoke_2018 + swansea_2018 + southampton_2018 + huddersfield_2018 + brighton_2018 + watford_2018 + westham_2018 + bournemouth_2018 +
+                 crystalpalace_2018 + newcastle_2018 + leicester_2018 + everton_2018 + burnley_2018 + arsenal_2018 + chelsea_2018 + liverpool_2018 + spurs_2018 + manutd_2018 + mancity_2018)
+players_19 = set(huddersfield_2019 + fulham_2019 + cardiff_2019 + brighton_2019 + southampton_2019 + burnley_2019 + bournemouth_2019 + newcastle_2019 + crystalpalace_2019 +
+                 watford_2019 + westham_2019 + leicester_2019 + everton_2019 + wolves_2019 + manutd_2019 + arsenal_2019 + spurs_2019 + chelsea_2019 + liverpool_2019 + mancity_2019)
+players_20 = set(norwich_2020 + watford_2020 + bournemouth_2020 + astonvilla_2020 + westham_2020 + brighton_2020 + crystalpalace_2020 + newcastle_2020 + everton_2020 +
+                 southampton_2020 + burnley_2020 + sheffield_2020 + arsenal_2020 + wolves_2020 + spurs_2020 + leicester_2020 + chelsea_2020 + manutd_2020 + mancity_2020 + liverpool_2020)
+players_21 = set(sheffield_2021 + westbrom_2021 + fulham_2021 + burnley_2021 + brighton_2021 + southampton_2021 + crystalpalace_2021 + wolves_2021 + newcastle_2021 +
+                 astonvilla_2021 + everton_2021 + leeds_2021 + arsenal_2021 + spurs_2021 + westham_2021 + leicester_2021 + chelsea_2021 + liverpool_2021 + manutd_2021 + mancity_2021)
+players_22 = set(norwich_2022 + watford_2022 + burnley_2022 + leeds_2022 + everton_2022 + southampton_2022 + astonvilla_2022 + brentford_2022 + crystalpalace_2022 +
+                 newcastle_2022 + wolves_2022 + brighton_2022 + leicester_2022 + westham_2022 + manutd_2022 + arsenal_2022 + spurs_2022 + chelsea_2022 + liverpool_2022 + mancity_2022)
+players_23 = set(southampton_2023 + leicester_2023 + nottingham_2023 + everton_2023 + leeds_2023 + westham_2023 + bournemouth_2023 + wolves_2023 + crystalpalace_2023 +
+                 chelsea_2023 + fulham_2023 + brentford_2023 + liverpool_2023 + brighton_2023 + astonvilla_2023 + spurs_2023 + newcastle_2023 + manutd_2023 + mancity_2023 + arsenal_2023)
+
+# print(len(players_01) + len(players_02) + len(players_03) + len(players_04) + len(players_05) + len(players_06) + len(players_07) + len(players_08) + len(players_09) + len(players_10) + len(players_11) + len(players_12) + len(players_13) + len(players_14) + len(players_15) + len(players_16) + len(players_17) + len(players_18) + len(players_19) + len(players_20) + len(players_21) + len(players_22) + len(players_23))
+# print(542+530+530+515+515+507+534+531+528+545+543+538+523+544+618+644+620+601+571+614+641+678+668)
