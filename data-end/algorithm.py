@@ -43,18 +43,18 @@ class Main:
     def connect(source, dest, guess):
     # The guess and the source should not be equal to 1
     # The guess and the source should not be equal
-    if test[source][guess] == 1:
-        # Turn the div to white
-        if test[guess][dest] == 1:
-            print("You won")
+        if test[source][guess] == 1:
+            # Turn the div to white
+            if test[guess][dest] == 1:
+                print("You won")
+            else:
+                # Add another div below the current one
+                # Update the source to the guess::Very important
+                print("Great Guess")
+                source = guess # my guess is that we use a useState variable for the two
         else:
-            # Add another div below the current one
-            # Update the source to the guess::Very important
-            print("Great Guess")
-            source = guess # my guess is that we use a useState variable for the two
-    else:
-        # Gray out the div
-        print("Wrong guess")
+            # Gray out the div
+            print("Wrong guess")
 
 
 if __name__ == '__main__':
