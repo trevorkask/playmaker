@@ -13,7 +13,6 @@
 }
 
 .dropdown{
- /* display: none; by default, it is hidden */
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -21,16 +20,17 @@
     z-index: 1000;
 }
 
-.search-bar-container, .dropdown {
+ .dropdown {
     margin: 0;
     padding: 0;
     z-index: 9;
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.818);
   }
 
 button{
     height: 35px;
-    width: 50%;
+    width: 100%;
 }
 
 .dropdown ul{
@@ -47,3 +47,5 @@ button{
 .dropdown ul li:hover{
     background: #525453;
 }
+
+/* dropdown display: none; by default, it is hidden */
