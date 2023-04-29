@@ -12,31 +12,20 @@ const Game = () => {
         setData([...data, {name: childData, state: "gray"}]); //fixme
     };
 
-    const playerData = [
-        { name: "Mason Mount", state: "gray" },
-        { name: "Sergio Ramos", state: "white" },
-        { name: "Neymar", state: "gray" },
-        { name: "Kylian Mbappé", state: "white"}
-    ];
-
     return(
         <div>
             <p>Connect between these two players using mutual teammates</p>
-            <SearchBar onData={handleData}/>
+            {data.length < 5 ? <SearchBar onData={handleData}/> : <br></br>}
             <div className="main-container">
                 <div id = "end-point">
                     <p>Cristiano Ronaldo</p>
                 </div>
 
-                {playerData.map((player) => (
-                    <Trial key={player.name} name={player.name} state={player.state} />
-                ))}
-
                 {data.map((player) => (
                     <Trial key={player.name} name={player.name} state={player.state} />
                 ))}
 
-                <p><b>?</b></p>
+                {data.length < 5 ? <p><b>?</b></p> : null}
                 <div id = "end-point">
                     <p>Lionel Messi</p>
                 </div>
