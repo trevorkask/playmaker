@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './SearchBar.css'
 
-function SearchBar() {
+function SearchBar(props) {
   const [query, setQuery] = useState("");
   const [options, setOptions] = useState([
     "Hakimi",
@@ -25,6 +25,10 @@ function SearchBar() {
     }
   }
 
+  const sendDataToParent = (option) => {
+    props.onData(option);
+  };
+
   return (
     <div className="search-bar-container">
         <input
@@ -40,7 +44,7 @@ function SearchBar() {
         
         <ul>
           {filteredOptions.map((option, index) => (
-            <li key={index} className="option" onClick={() => setQuery(option)}>
+            <li key={index} className="option" onClick={() => sendDataToParent(option)}>
               {option}
             </li>
           ))}
