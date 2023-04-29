@@ -11,13 +11,14 @@ function SearchBar(props) {
   ]);
   const [filteredOptions, setFilteredOptions] = useState(options);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [isFilteredOptionsEmpty, setIsFilteredOptionsEmpty] = useState(false);
 
   useEffect(() => {
-    setFilteredOptions(
-      options.filter((option) =>
-        option.toLowerCase().includes(query.toLowerCase())
-      )
+    const filtered = options.filter((option) =>
+      option.toLowerCase().includes(query.toLowerCase())
     );
+    setFilteredOptions(filtered);
+    setIsFilteredOptionsEmpty(filtered.length === 0);
   }, [options, query]);
 
   function handleKeyDown(event) {
@@ -48,7 +49,7 @@ function SearchBar(props) {
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
         />
-      {showDropdown && (
+      {showDropdown && !isFilteredOptionsEmpty && (
       <div className="dropdown">
         <ul>
           {filteredOptions.map((option, index) => (
