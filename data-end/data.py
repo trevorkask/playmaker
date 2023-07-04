@@ -1,4 +1,5 @@
-import json
+from pymongo import MongoClient
+
 # 2022 - 2023 Season
 arsenal_2023 = ['Gabriel Dos Santos', 'Aaron Ramsdale', 'William Saliba', 'Bukayo Saka', 'Martin Ødegaard', 'Granit Xhaka', 'Martinelli', 'Ben White', 'Thomas Partey', 'Oleksandr Zinchenko', 'Gabriel Jesus', 'Eddie Nketiah', 'Takehiro Tomiyasu', 'Leandro Trossard', 'Kieran Tierney', 'Jorginho',
                 'Fabio Vieira', 'Albert Sambi Lokonga', 'Mohamed Elneny', 'Emile Smith Rowe', 'Reiss Nelson', 'Cédric Soares', 'Rob Holding', 'Marquinhos', 'Ethan Nwaneri', 'Nathan Butler-Oyedeji', 'Amario Duberry', 'Karl Jakob Hein', 'Jakub Kiwior', 'Nicolas Pépé', 'Matthew Smith', 'Lino Sousa', 'Matt Turner']
@@ -1024,17 +1025,36 @@ hm = {'Neil Sullivan': 1, 'Kieran Agard': 2, 'Joseph Whitworth': 3, 'Li Tie': 4,
 
 ############################################################################
 
-matrix = [[0 for j in range(len(players))] for i in range(len(players))]
+# matrix = [[0 for j in range(len(players))] for i in range(len(players))]
 
-# hm gives us the player ID and Matrix is the whole shit
+# # hm gives us the player ID and Matrix is the whole shit
+# def populate(arr):
+#     for person in arr:
+#         for neighbor in arr:
+#             if person is not neighbor:
+#                 pIndex = hm[person] - 1
+#                 nIndex = hm[neighbor] - 1
+#                 matrix[pIndex][nIndex] = 1
+#                 matrix[nIndex][pIndex] = 1
+
+###########################################################################
+
+adj_list = {}
 def populate(arr):
     for person in arr:
         for neighbor in arr:
             if person is not neighbor:
-                pIndex = hm[person] - 1
-                nIndex = hm[neighbor] - 1
-                matrix[pIndex][nIndex] = 1
-                matrix[nIndex][pIndex] = 1
+                # Add node2 to the adjacency list of node1
+                if person in adj_list:
+                    adj_list[person].append(neighbor)
+                else:
+                    adj_list[person] = [neighbor]
+
+                # Add node1 to the adjacency list of node2
+                if neighbor in adj_list:
+                    adj_list[neighbor].append(person)
+                else:
+                    adj_list[neighbor] = [person]
 
 # 2023
 populate(mancity_2023)
@@ -1543,4 +1563,35 @@ populate(coventry_2001)
 populate(bradford_2001)
 
 
-print(matrix)
+# print(set(adj_list['Mason Mount']))
+
+client = MongoClient('mongodb://localhost:27017/')
+db = client['playmakerdb']
+collection = db['players']
+
+
+##########################################################################
+#Convert the dictionary to the 'players' data structure
+# players = []
+
+# for player_name, teammates in adj_list.items():
+#     player = {
+#         'name': player_name,
+#         'teammates': list(set(teammates))
+#     }
+#     players.append(player)
+
+
+# result = collection.insert_many(players)
+##########################################################################
+
+player_name = 'Ederson'
+
+# Query to retrieve the documents for the specified player
+query = {'name': player_name}
+results = collection.find(query)
+
+# Print the documents (teammates)
+for document in results:
+    teammates = document['teammates']
+    print(f"Teammates for {player_name}: {teammates}")
